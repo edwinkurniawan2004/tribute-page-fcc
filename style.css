@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, san-serif;
+  color: #444;
+  user-select: none;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+nav{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  width: 100%;
+  border-bottom: 4px solid #777;
+}
+
+nav ul{
+  align-items: center;
+  width: 80%;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 4px;
+  background-color: #777;
+  border-radius: 1px;
+}
+
+
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px black;
+}
+
+nav ul li a:hover{
+  opacity: .8;
+}
+
+#main-page{
+  margin-top: 58px;
+  text-align: center;
+}
+
+#main-page #title{
+  font-size: 50px;
+}
+
+#title{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  padding-top: 60px;
+  margin-bottom: 20px; 
+  font-size: 28px;
+  color: black;
+}
+
+#img-div{
+  width: 85%;
+  padding: 15px;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  display: block;
+}
+
+#image{
+  max-width: 100%;
+  display: block;
+}
+
+#img-caption{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#discography-page{
+  margin: auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+#fig-img{
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#figure{
+  width: 90%;
+  height: 90%;
+  width: 400px;
+  height: 277px;
+  margin: 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#figure img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#text{
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  opacity: 0;
+  transition: .5s
+}
+
+#text:hover{
+  opacity: .9;
+  color: black;
+  animation-duration: 2s;
+}
+
+#videos-page{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#videos{
+  width: 100%;
+}
+
+#videos iframe{
+  width: 80%;
+  padding: 10px;
+}
+
+
+#follow-page{
+  border-top: 4px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111;
+  margin-top: 40px;
+}
+
+#follow-page #title{
+  padding: 0;
+  margin: 10px auto 0;
+  color: white;
+}
+
+#follow-page ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#follow-page ul li{
+  list-style: none;
+}
+
+#tribute-link{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tribute-link:hover{
+  color: lightblue;
+}
+
+/* media query */
+
+@media (max-width: 350px){
+  nav ul li{
+    margin: 2px;
+  }
+}
+
+@media (max-width: 300px){
+  #geography-page{
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 465px){
+    #fig-img{
+      display: flex;
+      flex-direction: column;
+    }
+    nav ul{
+      margin-left: -2px;
+    }
+    #follow-page ul{
+      width: 100%;
+    }
+}
+
+@media (max-width: 765px){
+    #fig-img{
+      display: flex;
+      flex-direction: column;
+    }
+    #follow-page ul{
+      width: 70%;
+    }
+}
+
+
+
+
+
